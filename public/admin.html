@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title>Café Elite | Administración</title>
+</head>
+<body data-page="admin">
+<div class="admin-shell multipage-admin">
+  <aside class="admin-sidebar">
+    <a class="brand" href="/index.html"><span class="brand-mark">CE</span><span>Café Elite</span></a>
+    <p class="admin-label">Administración</p>
+    <button class="admin-nav active" data-admin-view="dashboard">Resumen</button>
+    <button class="admin-nav" data-admin-view="inventory">Inventario</button>
+    <button class="admin-nav" data-admin-view="reports">Reportes</button>
+    <a class="admin-nav admin-link" href="/index.html">← Volver al sitio</a>
+    <button class="admin-nav admin-logout" id="adminLogoutBtn" type="button">↪ Cerrar sesión</button>
+  </aside>
+
+  <main class="admin-content">
+    <header class="admin-topbar">
+      <div>
+        <p class="eyebrow">PANEL ADMIN</p>
+        <h1>Gestión de Café Elite</h1>
+      </div>
+      <div class="admin-user" id="adminUser">Administrador</div>
+    </header>
+    <div id="adminView"></div>
+  </main>
+</div>
+<div class="toast" id="toast"></div>
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title>Café Elite | Menú</title>
+</head>
+<body data-page="menu">
+
+<header class="site-header">
+  <a class="brand" href="/index.html" aria-label="Café Elite, inicio">
+    <span class="brand-mark">CE</span>
+    <span>Café Elite</span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+  <nav class="nav" id="mainNav">
+    <a href="/index.html">Inicio</a>
+    <a href="/menu.html">Menú</a>
+    <a href="/carrito.html">Carrito <span class="nav-cart-count" id="cartCount">0</span></a>
+    <div class="account-menu" id="accountMenu">
+      <a href="/login.html" id="accountLink" class="account-trigger">Ingresar</a>
+      <div class="account-dropdown" id="accountDropdown" aria-hidden="true">
+        <div class="account-info">
+          <strong id="accountName">Usuario</strong>
+          <span id="accountEmail"></span>
+        </div>
+        <a class="account-option hidden" href="/admin.html" id="adminPanelLink">Panel administrativo</a>
+        <button class="account-option logout-option" id="logoutBtn" type="button">Cerrar sesión</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main class="page-shell">
+  <section class="page-intro">
+    <p class="eyebrow">MENÚ DIGITAL</p>
+    <h1>Elige tu próximo favorito.</h1>
+    <p>Consulta productos, precios y disponibilidad antes de agregar al carrito.</p>
+  </section>
+
+  <section class="section page-section">
+    <div class="filters" id="filters">
+      <button class="filter active" data-category="Todos">Todos</button>
+      <button class="filter" data-category="Café">Café</button>
+      <button class="filter" data-category="Bebida fría">Fríos</button>
+      <button class="filter" data-category="Panadería">Panadería</button>
+      <button class="filter" data-category="Comida">Comida</button>
+      <button class="filter" data-category="Postre">Postres</button>
+      <button class="filter" data-category="Té">Té</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid">
+      <div class="loading-card">Cargando menú…</div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="brand footer-brand" href="/index.html">
+    <span class="brand-mark">CE</span><span>Café Elite</span>
+  </a>
+  <p>Servicio digital pensado para estudiantes, docentes y personal administrativo.</p>
+  <span>© <span id="year"></span> Café Elite</span>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="/js/app.js"></script>
+
+</body>
+</html>

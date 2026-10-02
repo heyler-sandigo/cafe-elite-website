@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <title>Café Elite | Confirmación</title>
+</head>
+<body data-page="confirmacion">
+
+<header class="site-header">
+  <a class="brand" href="/index.html" aria-label="Café Elite, inicio">
+    <span class="brand-mark">CE</span>
+    <span>Café Elite</span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+  <nav class="nav" id="mainNav">
+    <a href="/index.html">Inicio</a>
+    <a href="/menu.html">Menú</a>
+    <a href="/carrito.html">Carrito <span class="nav-cart-count" id="cartCount">0</span></a>
+    <div class="account-menu" id="accountMenu">
+      <a href="/login.html" id="accountLink" class="account-trigger">Ingresar</a>
+      <div class="account-dropdown" id="accountDropdown" aria-hidden="true">
+        <div class="account-info">
+          <strong id="accountName">Usuario</strong>
+          <span id="accountEmail"></span>
+        </div>
+        <a class="account-option hidden" href="/admin.html" id="adminPanelLink">Panel administrativo</a>
+        <button class="account-option logout-option" id="logoutBtn" type="button">Cerrar sesión</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<main class="page-shell confirmation-page">
+  <section class="confirmation-card-page">
+    <div class="success-icon">✓</div>
+    <p class="eyebrow">PEDIDO CONFIRMADO</p>
+    <h1>¡Tu café ya está en marcha!</h1>
+    <p id="confirmationText">Estamos preparando tu pedido.</p>
+
+    <div class="confirmation-details" id="confirmationDetails"></div>
+
+    <div class="confirmation-actions">
+      <a class="btn primary" href="/menu.html">Volver al menú</a>
+      <a class="btn secondary" href="/index.html">Ir al inicio</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="brand footer-brand" href="/index.html">
+    <span class="brand-mark">CE</span><span>Café Elite</span>
+  </a>
+  <p>Servicio digital pensado para estudiantes, docentes y personal administrativo.</p>
+  <span>© <span id="year"></span> Café Elite</span>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="/js/app.js"></script>
+
+</body>
+</html>
